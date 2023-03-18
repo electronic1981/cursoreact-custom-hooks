@@ -5,7 +5,6 @@ export const useForm = (inicial = {}) => {
 
    const onInputChange = ({ target }) => { // target pertenece al objeto event
       const { name, value } = target;
-      //console.log(name, value);
       setFormState({
          ...formState,
          [name]: value

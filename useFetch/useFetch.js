@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 
 export const useFetch = (url) => {
 
-   //https://api.breakingbadquotes.xyz/v1/quotes/5
-   //https://api.breakingbadquotes.xyz/v1/quotes
-
-   //https://api.breakingbadquotes.xyz/v1/quotes
-   //
+   /**
+    * APIS de pruebas
+    * ...
+      //https://api.breakingbadquotes.xyz/v1/quotes/5
+      //https://api.breakingbadquotes.xyz/v1/quotes
+      //https://api.breakingbadquotes.xyz/v1/quotes
+    */
    const [state, setState] = useState({
       data: null,
       isLoading: true,
@@ -29,9 +31,6 @@ export const useFetch = (url) => {
 
    useEffect(() => {
       getFetch();
-      return () => {
-         //
-      }
    }, [url])
 
 

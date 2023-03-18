@@ -1,5 +1,5 @@
 import { useEffect, useReducer } from "react"
-import { TodoReducer } from "../08-useReducer/TodoReducer";
+import { TodoReducer } from "./todoReducer";
 
 
 
@@ -31,7 +31,6 @@ export const useTodo = () => {
    }
 
    const tacharTodo = (idTodo) => {
-      //console.log(idTodo);
       const action = {
          type: 'Tachar Todo',
          payload: idTodo,
